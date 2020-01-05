@@ -3,38 +3,26 @@
 
 class Cheese : public CondimentDecorator {
 private:
-	Burger* burger;
 
 public: 
 	Cheese(Burger* burger) {
+		description = "cheese"; 
 		this->burger = burger; 
-	}
-
-	string getDescription(void) {
-		return burger->getDescription() + " + cheese"; 
-	}
-
-	double cost(void) {
-		return burger->cost() + .50; 
+		this->cost = .50; 
 	}
 
 };
 
 class Avocado : public CondimentDecorator {
 private:
-	Burger* burger;
 
 public: 
 	Avocado(Burger* burger) {
+		description = "avocado";
 		this->burger = burger;
+		this->cost = 1.00; 
 	}
 
-	string getDescription(void) {
-		return burger->getDescription() + " + avocado";
-	}
 
-	double cost(void) {
-		return burger->cost() + 1.00; 
-	}
 
 };

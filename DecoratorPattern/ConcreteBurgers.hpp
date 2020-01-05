@@ -7,7 +7,7 @@ public:
 		description = "Beef Burger"; 
 	}
 
-	double cost(void) {
+	double getCost(void) {
 		return 5.00; 
 	}
 };
@@ -18,7 +18,7 @@ public:
 		description = "Turkey Burger";
 	}
 
-	double cost(void) {
+	double getCost(void) {
 		return 6.00; 
 	}
 };
@@ -29,7 +29,7 @@ public:
 		description = "Bean Burger";
 	}
 
-	double cost(void) {
+	double getCost(void) {
 		return 7.00; 
 	}
 };
